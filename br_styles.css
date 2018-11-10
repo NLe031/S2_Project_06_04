@@ -61,7 +61,7 @@ nav a:active {
 article {
     margin: 10px;
     padding: 5px;
-    height: 350px;
+    height: 375px;
 }
 
 article h1 {
@@ -70,4 +70,30 @@ article h1 {
 
 article p {
     padding: 15px;
+}
+
+/* Figure Image Styles */
+figure {
+    width: 33%;
+    float: left;
+    display: block;
+}
+
+figure img {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+figure figcaption {
+    text-align: left;
+    clear: left;
+    float: left;
+}
+
+/* footer Styles */
+footer {
+    padding: 8px;
+    text-align: center;
+    color: rgba(21, 17, 17, .6);
+    margin-top: 1px;
 }
