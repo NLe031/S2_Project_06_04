@@ -14,11 +14,13 @@
 */
 
 /* Html Syles */
+/* Added Background image */
 html {
     background: url(br_paper.png);
 }
 
 /* Body Styles */
+/* Created a limit to the body */
 body {
     width: 90%;
     min-width: 640px;
@@ -27,8 +29,12 @@ body {
 }
 
 /* Header Styles */
+/* slightly rotated the image and added a drop shadow for effect, also made the nav centered */
 header img {
     width: 100%;
+    transform: rotateX(28deg);
+    filter: drop-shadow(rgba(51, 51, 51, 0.7) -15px 0px 5px);
+    -webkit-filter: drop-shadow(rgba(51, 51, 51, 0.7) -15px 0px 5px);
 }
 
 header>nav {
@@ -87,6 +93,7 @@ nav#secondnav a:active {
 }
 
 /* Article Styles */
+/* Changed the font family and added text shadow */
 article {
     margin: 10px;
     padding: 5px;
@@ -104,6 +111,7 @@ article p {
 }
 
 /* Aside Styles*/
+/* Destroyed address and section with borders and gradients */
 .in address {
     display: block;
     width: 26%;
@@ -112,6 +120,7 @@ article p {
     border: 2px solid;
     border-radius: 5px;
     box-shadow: rgb(39, 39, 39) -2px 2px 2px;
+    background: radial-gradient(white, rgba(145, 145, 146, 0.692));
 }
 
 .in section {
@@ -123,9 +132,11 @@ article p {
     border: 2px solid;
     border-radius: 5px;
     box-shadow: rgb(39, 39, 39) 2px 2px 2px;
+    background: linear-gradient(128deg, white, rgba(145, 145, 145, 0.753)80%);
 }
 
 /* Figure Image Styles */
+/* Created a grid for the images without divs */
 figure {
     width: 33%;
     float: left;
@@ -147,6 +158,7 @@ figure figcaption {
 }
 
 /* footer Styles */
+/* Added a footer to keep the images from connecting with the very bottom of the page */
 footer {
     padding: 8px;
     text-align: center;
