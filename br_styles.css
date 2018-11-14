@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 4
@@ -21,8 +21,9 @@ html {
 /* Body Styles */
 body {
     width: 90%;
+    min-width: 640px;
+    max-width: 960px;
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
 /* Header Styles */
@@ -57,19 +58,71 @@ nav a:active {
     text-decoration: underline;
 }
 
+nav#secondnav {
+    display: table;
+    width: 100%;
+    padding: 10px;
+}
+
+nav#secondnav>ul {
+    display: table-row;
+    list-style-type: none;
+}
+
+nav#secondnav>ul>li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav#secondnav a:visited,
+nav#secondnav a:link {
+    color: #3e33ff;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+nav#secondnav a:hover,
+nav#secondnav a:active {
+    text-decoration: underline;
+}
+
 /* Article Styles */
 article {
     margin: 10px;
     padding: 5px;
-    height: 375px;
+    height: 325px;
 }
 
 article h1 {
     padding: 10px;
+    text-shadow: rgba(21, 21, 21, 0.86) 5px 5px 25px;
 }
 
 article p {
     padding: 15px;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+/* Aside Styles*/
+.in address {
+    display: block;
+    width: 26%;
+    float: left;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: rgb(39, 39, 39) -2px 2px 2px;
+}
+
+.in section {
+    display: block;
+    width: 26%;
+    float: right;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: rgb(39, 39, 39) 2px 2px 2px;
 }
 
 /* Figure Image Styles */
@@ -77,6 +130,9 @@ figure {
     width: 33%;
     float: left;
     display: block;
+    font-family: 'Carter One', cursive;
+    font-weight: 600;
+    font-size: 1.3em;
 }
 
 figure img {
